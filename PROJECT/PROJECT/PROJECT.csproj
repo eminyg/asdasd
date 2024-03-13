@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8692C581-0B04-4802-A7D7-CE1D15A4E4FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PROJECT</RootNamespace>
+    <AssemblyName>PROJECT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+	<UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts Verwalten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accounts Verwalten.Designer.cs">
+      <DependentUpon>Accounts Verwalten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHomepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHomepage.Designer.cs">
+      <DependentUpon>AdminHomepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Anmelden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anmelden.Designer.cs">
+      <DependentUpon>Anmelden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flugzeuge Verwalten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flugzeuge Verwalten.Designer.cs">
+      <DependentUpon>Flugzeuge Verwalten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flüge Verwalten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flüge Verwalten.Designer.cs">
+      <DependentUpon>Flüge Verwalten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gepäcke Verwalten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gepäcke Verwalten.Designer.cs">
+      <DependentUpon>Gepäcke Verwalten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passagiere Verwaltung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passagiere Verwaltung.Designer.cs">
+      <DependentUpon>Passagiere Verwaltung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PassagierErstelen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassagierErstelen.Designer.cs">
+      <DependentUpon>PassagierErstelen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pilot Verwaltung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pilot Verwaltung.Designer.cs">
+      <DependentUpon>Pilot Verwaltung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticktverwalten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticktverwalten.Designer.cs">
+      <DependentUpon>Ticktverwalten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Homepage.Designer.cs">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="komtoverwalten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="komtoverwalten.Designer.cs">
+      <DependentUpon>komtoverwalten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kontoerstellen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kontoerstellen.Designer.cs">
+      <DependentUpon>kontoerstellen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticktkaufen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticktkaufen.Designer.cs">
+      <DependentUpon>Ticktkaufen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticlktweitereinkauf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticlktweitereinkauf.Designer.cs">
+      <DependentUpon>Ticlktweitereinkauf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Accounts Verwalten.resx">
+      <DependentUpon>Accounts Verwalten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHomepage.resx">
+      <DependentUpon>AdminHomepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anmelden.resx">
+      <DependentUpon>Anmelden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flugzeuge Verwalten.resx">
+      <DependentUpon>Flugzeuge Verwalten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flüge Verwalten.resx">
+      <DependentUpon>Flüge Verwalten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gepäcke Verwalten.resx">
+      <DependentUpon>Gepäcke Verwalten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Homepage.resx">
+      <DependentUpon>Homepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="komtoverwalten.resx">
+      <DependentUpon>komtoverwalten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kontoerstellen.resx">
+      <DependentUpon>kontoerstellen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passagiere Verwaltung.resx">
+      <DependentUpon>Passagiere Verwaltung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassagierErstelen.resx">
+      <DependentUpon>PassagierErstelen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pilot Verwaltung.resx">
+      <DependentUpon>Pilot Verwaltung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticktkaufen.resx">
+      <DependentUpon>Ticktkaufen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticktverwalten.resx">
+      <DependentUpon>Ticktverwalten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticlktweitereinkauf.resx">
+      <DependentUpon>Ticlktweitereinkauf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
